@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: nx-poc-service
+  labels:
+    app: nx-poc-app
+spec:
+  selector:
+    app: nx-poc-app 
+
+  ports:
+    - port: 80
+      targetPort: 8080
+
+  type: LoadBalancer
