@@ -1,1 +1,1 @@
-
+This Repo purpose is to build the Pipeline workflow to create the docker file and pushed into the ECR and deploy into the kubernetes cluster
