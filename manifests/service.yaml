@@ -3,13 +3,13 @@ kind: Service
 metadata:
   name: nx-poc-service
   labels:
-    app: nx-poc-app
+    app: nexusapp-ecr
 spec:
   selector:
-    app: nx-poc-app 
+    app: nexusapp-ecr
 
   ports:
     - port: 80
-      targetPort: 8080
+      targetPort: 5173
 
   type: LoadBalancer
