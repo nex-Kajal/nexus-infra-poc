@@ -13,3 +13,4 @@ spec:
       targetPort: 5173
 
   type: LoadBalancer
+  
