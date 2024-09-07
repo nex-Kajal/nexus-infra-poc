@@ -1,0 +1,29 @@
+apiVersion: apps/v1 
+kind: Deployment
+metadata:
+  name: nexusapp-ecr
+  labels: 
+     app: nexusapp-ecr
+
+spec:
+  replicas: 1 
+  selector:
+    matchLabels:
+      app: nexusapp-ecr
+
+  template:
+    metadata:
+      labels:
+        app: nexusapp-ecr
+    spec:
+      containers:
+      - name: nexusapp-ecr
+        image: DOCKER_IMAGE
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
