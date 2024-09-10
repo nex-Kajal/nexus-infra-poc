@@ -2,6 +2,6 @@
   "greeting": "Hello, Welcome!",
   "description": {
     "line1": "You're watching <1>{{channel}}</1> Demo Project",
-    "line2": "This is an Internationalisation Greetings"
+    "line2": "This is an Internationalisation Greetings..!!!"
   }
 }
